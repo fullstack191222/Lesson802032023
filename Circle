@@ -1,0 +1,9 @@
+public class Circle {
+    int radius; //length of the radius 10
+    Point center;//point is a center of the circle  3,2
+
+    public Circle(int radius, Point center) {
+        this.radius = radius;
+        this.center = center;
+    }
+}
