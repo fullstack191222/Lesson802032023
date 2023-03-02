@@ -1,0 +1,40 @@
+package zoo;
+
+public class Cat extends Animal {
+   private int tailLenght;
+
+   public Cat(int age, int weight, String name) {
+      super(age, weight, name);
+   }
+
+   public Cat(int age, int weight, String name, int tailLenght) {
+      super(age, weight, name);
+      this.tailLenght = tailLenght;
+   }
+
+   public int getTailLenght() {
+      return tailLenght;
+   }
+
+   public void setTailLenght(int tailLenght) {
+      this.tailLenght = tailLenght;
+   }
+
+   public void printAll() {
+      System.out.print(" Tail lenght: " + this.tailLenght + " ");
+      super.printAll();
+   }
+
+   @Override
+   public String toString() {
+      return super.toString() + " Cat{" +
+              "tailLenght=" + tailLenght +
+              '}';
+   }
+
+
+   public void saySomething() {
+      System.out.println("Meow meow!");
+   }
+
+}
